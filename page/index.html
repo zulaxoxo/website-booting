@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Namaku:Yohanes | Kelompok 5</p>
+    <script>
+        Url = {
+            get get() {
+                var vars = {};
+                if (window.location.search.length !== 0)
+                    window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                        key = decodeURIComponent(key);
+                        if (typeof vars[key] === "undefined") { vars[key] = decodeURIComponent(value); }
+                        else { vars[key] = [].concat(vars[key], decodeURIComponent(value)); }
+                    });
+                return vars;
+            }
+        };
+        
+        console.log(Url.get.nama)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.menu{
+    float: right;
+    list-style: none;
+}
+.wrapper{
+    box-shadow: 0 0 10px black;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    gap: 25px;
+    align-items: start;
+}
+nav{
+    z-index: 9;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #B3C8CF;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    float: none;
+    text-decoration: none;
+}
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+h2{
+    font-style: normal;
+    font-family: "Roboto";
+    font-size: 30px;
+    text-align: center;
+}
+.kolom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.foto{
+    border-radius: 50%;
+    border: solid;
+    width: 10%;
+    height: 10%;
+    object-fit: contain;
+    display: flex;
+}
+@media only screen and (max-width: 580px) {
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .deskripsi{
+        font-size: 10px;
+        font-family: "Roboto";
+    }
+.deskripsi2{
+font-size: 10px;
+font-family: "Roboto";
+}
